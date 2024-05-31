@@ -1,0 +1,147 @@
+@import 'index.module.scss';
+
+/* BENTO GRID LAYOUT */
+.bento {
+    height: 100svh;
+    padding: $size--gap;
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: repeat(13, 1fr);
+    grid-auto-rows: minmax(100px, auto);
+    grid-gap: $size--gap;
+   
+    div {
+        border: 2px solid black;
+        border-radius: $size--border-radius;
+    }
+
+    .bento__photo {
+        grid-column: 1/4;
+        grid-row: 1/3;
+        text-align: center;
+
+        .photo__image {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+            border-radius: $size--border-radius;
+        }
+    }
+
+    .bento__description {
+        grid-column: 4/11;
+        grid-row: 1/3;
+    }
+
+    .bento__contact {
+        grid-column: 11/14;
+        grid-row: 1/3;
+    }
+
+    .bento__languaje {
+        grid-column: 1/3;
+        grid-row: 3/5;
+    }
+
+    .bento__skills {
+        grid-column: 1/3;
+        grid-row: 5/7;
+    }
+
+    .bento__experience {
+        grid-column: 3/7;
+        grid-row: 3/7;
+    }
+
+    .bento__studies {
+        grid-column: 7/14;
+        grid-row: 3/5;
+    }
+
+    .bento__projects {
+        grid-column: 7/12;
+        grid-row: 5/7;
+    }
+
+    .bento__theme {
+        grid-column: 12/14;
+        grid-row: 5/7;
+    }
+}
+
+/* Animations */
+
+@keyframes slideInLeft {
+    from {
+        transform: translateX(-20rem);
+    }
+
+    to {
+        transform: translateX(0);
+    }
+}
+
+.slideInLeft {
+    animation: slideInLeft 1s ease-out;
+}
+
+@keyframes slideInRight {
+    from {
+        transform: translateX(20rem);
+    }
+
+    to {
+        transform: translateX(0);
+    }
+}
+
+.slideInRight {
+    animation: slideInRight 1s ease-out;
+}
+
+@keyframes slideInTop {
+    from {
+        transform: translateY(-20rem);
+    }
+
+    to {
+        transform: translateX(0);
+    }
+}
+
+.slideInTop {
+    animation: slideInTop 1s ease-out;
+}
+
+@keyframes slideInBottom {
+    from {
+        transform: translateY(20rem);
+    }
+
+    to {
+        transform: translateX(0);
+    }
+}
+
+.slideInBottom {
+    animation: slideInBottom 1s ease-out;
+}
+
+/* Utility Classes */
+
+.animate {
+    animation-duration: 1s;
+    animation-fill-mode: both;
+}
+
+.animate--slow {
+    animation-duration: $animate-speed--slow;
+}
+
+.animate--mid {
+    animation-duration: $animate-speed--mid;
+}
+
+.animation--fast {
+    animation-duration: $animate-speed--fast;
+}
