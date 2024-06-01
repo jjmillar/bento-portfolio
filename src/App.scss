@@ -3,7 +3,7 @@
 /* BENTO GRID LAYOUT */
 .bento {
     height: 100svh;
-    padding: $size--gap;
+    padding: 5svh 5svw;
     box-sizing: border-box;
     display: grid;
     grid-template-columns: repeat(13, 1fr);

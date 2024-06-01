@@ -1,4 +1,6 @@
 import './App.scss'
+import Icon from '@mdi/react'
+import { mdiGithub } from '@mdi/js'
 
 function App () {
   return (
@@ -26,7 +28,7 @@ function App () {
         </summary>
       </div>
       <div className='bento__skills animate slideInLeft animete--mid'>
-        <h1>Skills</h1>
+        <Icon path={mdiGithub} size={1} />
       </div>
       <div className='bento__experience animate slideInBottom animate--fast'>
         <h1>Experience</h1>
