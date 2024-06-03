@@ -7,6 +7,7 @@
     box-sizing: border-box;
     display: grid;
     grid-template-columns: repeat(13, 1fr);
+    grid-template-rows: repeat(6, 1fr);
     grid-gap: $size--gap;
    
     section { /* REMOVER ESTE SELECTOR DESPUES*/
