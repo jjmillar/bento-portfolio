@@ -15,6 +15,11 @@ function App () {
       </section>
       <section className='bento__contact animate slideInRight animate--slow'>
         <h1>Contact</h1>
+        <Icon path={mdiGithub} size={2} />
+        <Icon path={mdiEmailOutline} size={2} />
+        <Icon path={mdiLinkedin} size={2} />
+        <Icon path={mdiCellphone} size={2} />
+        <Icon path={mdiMapMarkerOutline} size={2} />
       </section>
       <section className='bento__languaje animate slideInLeft animate--slow'>
         <h1>Languajes</h1>
@@ -28,12 +33,7 @@ function App () {
         </summary>
       </section>
       <section className='bento__skills animate slideInLeft animete--mid'>
-        <h2>Contact</h2>
-        <Icon path={mdiGithub} size={2} />
-        <Icon path={mdiEmailOutline} size={2} />
-        <Icon path={mdiLinkedin} size={2} />
-        <Icon path={mdiCellphone} size={2} />
-        <Icon path={mdiMapMarkerOutline} size={2} />
+        <h2>Skills</h2>
       </section>
       <section className='bento__experience animate slideInBottom animate--fast'>
         <h1>Experience</h1>
