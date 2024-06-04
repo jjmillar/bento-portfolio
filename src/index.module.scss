@@ -16,5 +16,8 @@ $size--gap: 10px;
 
 body {
   margin: 0;
-  overflow: hidden
+}
+
+::-webkit-scrollbar {
+  display: none;
 }
