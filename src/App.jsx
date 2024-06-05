@@ -1,7 +1,7 @@
 import './App.scss'
-import Icon from '@mdi/react'
-import { mdiGithub, mdiEmailOutline, mdiLinkedin, mdiCellphone, mdiMapMarkerOutline } from '@mdi/js'
 import { animateClass } from './utils'
+import Contact from '../components/contact'
+import Skills from '../components/skills'
 
 function App () {
   return (
@@ -16,11 +16,7 @@ function App () {
       </section>
       <section id='bento__contact' className={`bento__contact animate ${animateClass('slideInRight', 'slideInRight', 'slideInLeft')} animate--slow`}>
         <h1>Contact</h1>
-        <Icon path={mdiGithub} size={2} />
-        <Icon path={mdiEmailOutline} size={2} />
-        <Icon path={mdiLinkedin} size={2} />
-        <Icon path={mdiCellphone} size={2} />
-        <Icon path={mdiMapMarkerOutline} size={2} />
+        <Contact />
       </section>
       <section id='bento__languaje' className={`bento__languaje animate ${animateClass('slideInLeft', 'slideInBottom', 'slideInBottom')} animate--slow`}>
         <h1>Languajes</h1>
@@ -35,6 +31,7 @@ function App () {
       </section>
       <section id='bento__skills' className={`bento__skills animate ${animateClass('slideInLeft', 'slideInLeft', 'slideInRight')} animete--mid`}>
         <h2>Skills</h2>
+        <Skills />
       </section>
       <section id='bento__experience' className={`bento__experience animate ${animateClass('slideInBottom', 'slideInLeft', 'slideInLeft')} animate--fast`}>
         <h1>Experience</h1>
