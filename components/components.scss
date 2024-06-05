@@ -1,3 +1,5 @@
+@import '../src/index.module.scss';
+
 /* SKILLS */
 
 .skills__wrapper {
@@ -5,4 +7,20 @@
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 5px;
+}
+
+.studies__wrapper{
+    background-color: blue;
+
+    display: flex;
+    justify-content: space-evenly;
+    gap: 5px;
+
+
+    .studies__card {
+        height: 150px;
+        width: 100px;
+        border-radius: $size--border-radius;
+        background-color: red;
+    }
 }

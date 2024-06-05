@@ -2,6 +2,16 @@
 $animate-speed--slow: 1.5s;
 $animate-speed--mid: 1s;
 $animate-speed--fast: 0.3s;
+
+$clr--bg: #073b4c;
+$clr--bluesky: #118ab2;
+$clr--egyptian-blue: #9B7EDE;
+$clr--green: #06d6a0;
+$clr--light-yellow: #FDFCDC;
+$clr--yellow: #ffd166;
+$clr--red: #ef476f;
+
+
 $size--border-radius: 1rem;
 $size--gap: 10px;
 
@@ -16,6 +26,7 @@ $size--gap: 10px;
 
 body {
   margin: 0;
+  background-color: $clr--bg;
 }
 
 ::-webkit-scrollbar {

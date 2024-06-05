@@ -2,6 +2,7 @@ import './App.scss'
 import { animateClass } from './utils'
 import Contact from '../components/contact'
 import Skills from '../components/skills'
+import Studies from '../components/studies'
 
 function App () {
   return (
@@ -38,6 +39,7 @@ function App () {
       </section>
       <section id='bento__studies' className={`bento__studies animate ${animateClass('slideInRight', 'slideInRight', 'slideInRight')} animate--slow`}>
         <h1>Studies</h1>
+        <Studies />
       </section>
       <section id='bento__projects' className={`bento__projects animate ${animateClass('slideInBottom', 'slideInBottom', 'slideInRight')} animate--fast`}>
         <h1>Projects</h1>
