@@ -54,7 +54,7 @@
         background-color: $clr--light-yellow;
         grid-column: 11/14;
         grid-row: 1/3;
-        align-items: center;
+        box-sizing: border-box;
     }
 
     .bento__experience {

@@ -13,6 +13,7 @@ export default function Skills () {
       <img src='express.svg' alt='express logo' />
       <img src='mongodb.svg' alt='mongodb logo' />
       <img src='mysql.svg' alt='mysql logo' />
+      <img src='git.svg' alt='git logo' />
     </div>
   )
 }
