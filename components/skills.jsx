@@ -11,6 +11,8 @@ export default function Skills () {
       <img src='nextjs.svg' alt='nextjs logo' />
       <img src='nodejs.svg' alt='nodejs logo' />
       <img src='express.svg' alt='express logo' />
+      <img src='mongodb.svg' alt='mongodb logo' />
+      <img src='mysql.svg' alt='mysql logo' />
     </div>
   )
 }
