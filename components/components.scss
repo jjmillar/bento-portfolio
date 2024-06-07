@@ -3,10 +3,10 @@
 /* SKILLS */
 
 .skills__wrapper {
+    box-sizing: border-box;
     padding: 0.5rem;
     display: grid;
     place-items: center;
-    place-content: center;
     grid-template-columns: repeat(4, 1fr);
     gap: 1rem;
 }
