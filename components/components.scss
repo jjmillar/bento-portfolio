@@ -3,12 +3,18 @@
 /* SKILLS */
 
 .skills__wrapper {
-    box-sizing: border-box;
+    height: calc(90% - $size--title);
     padding: 0.5rem;
     display: grid;
     place-items: center;
     grid-template-columns: repeat(4, 1fr);
-    gap: 1rem;
+    grid-template-rows: calc((100% - $size--title)/3) calc((100% - $size--title)/3) calc((100% - $size--title)/3);
+    gap: 0.5rem;
+
+    img {
+        height: 100%;
+        width: 100%;
+    }
 }
 
 /* STUDIES */
