@@ -8,7 +8,7 @@
     display: grid;
     place-items: center;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: calc((100% - $size--title)/3) calc((100% - $size--title)/3) calc((100% - $size--title)/3);
+    grid-template-rows: calc((100% - $size--title) / 3) calc((100% - $size--title) / 3) calc((100% - $size--title) / 3);
     gap: 0.5rem;
 
     img {
@@ -32,5 +32,20 @@
         width: 100px;
         border-radius: $size--border-radius;
         background-color: red;
+    }
+}
+
+/* CONTACT */
+
+.contact__wrapper {
+    height: calc(100% - $size--title - 0.5rem);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    
+
+    svg {
+        max-width: 3.5rem;
     }
 }

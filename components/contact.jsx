@@ -3,12 +3,12 @@ import { mdiGithub, mdiEmailOutline, mdiLinkedin, mdiCellphone, mdiMapMarkerOutl
 
 export default function Contact () {
   return (
-    <>
-      <Icon path={mdiGithub} size={2} />
-      <Icon path={mdiEmailOutline} size={2} />
-      <Icon path={mdiLinkedin} size={2} />
-      <Icon path={mdiCellphone} size={2} />
-      <Icon path={mdiMapMarkerOutline} size={2} />
-    </>
+    <div className='contact__wrapper'>
+      <Icon path={mdiGithub} />
+      <Icon path={mdiEmailOutline} />
+      <Icon path={mdiLinkedin} />
+      <Icon path={mdiCellphone} />
+      <Icon path={mdiMapMarkerOutline} />
+    </div>
   )
 }

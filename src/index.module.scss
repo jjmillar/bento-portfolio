@@ -29,6 +29,7 @@ $size--title: 1.5rem;
 body {
   margin: 0;
   background-color: $clr--bg;
+  overflow: hidden;
 }
 
 ::-webkit-scrollbar {
