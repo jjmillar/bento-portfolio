@@ -3,6 +3,8 @@ import { animateClass } from './utils'
 import Contact from '../components/contact'
 import Skills from '../components/skills'
 import Studies from '../components/studies'
+import Experience from '../components/experience'
+import Projects from '../components/projects'
 
 function App () {
   return (
@@ -32,6 +34,7 @@ function App () {
       </section>
       <section id='bento__experience' className={`bento__experience animate ${animateClass('slideInBottom', 'slideInLeft', 'slideInLeft')} animate--fast`}>
         <label className='title'>Experiencia</label>
+        <Experience />
       </section>
       <section id='bento__studies' className={`bento__studies animate ${animateClass('slideInRight', 'slideInRight', 'slideInRight')} animate--slow`}>
         <label className='title'>Estudios</label>
@@ -39,6 +42,7 @@ function App () {
       </section>
       <section id='bento__projects' className={`bento__projects animate ${animateClass('slideInBottom', 'slideInBottom', 'slideInRight')} animate--fast`}>
         <label className='title'>Proyectos</label>
+        <Projects />
       </section>
       <section id='bento__theme' className={`bento__theme animate ${animateClass('slideInRight', 'slideInRight', 'slideInRight')} animate--mid`} />
     </main>

@@ -34,7 +34,7 @@
         padding: 1rem;
         border: none;
         border-radius: calc($size--border-radius * 2);
-        background-color: #DDFC74;
+        background-color: $clr--lime;
 
         font-family: $font--primary;
         font-weight: 800;
@@ -62,5 +62,58 @@
                 min-width: 3.5rem;
                 color: black;
         }
+    }
+}
+
+/* EXPERIENCE */
+
+.experience__wrapper {
+    height: calc(100% - $size--title - 0.5rem);
+    overflow: scroll;
+
+    & .experience__title {
+        font-weight: 700;
+        margin: 2rem 0 0 0;
+    }
+
+    & .experience__dates {
+        margin: 0.5rem 0;
+        font-weight: 500;
+    }
+
+    & ul {
+        margin: 0;
+
+        & li::marker {
+            color: $clr--red;
+        }
+    }
+}
+
+/* PROJECTS */
+
+.projects__wrapper {
+    height: calc(100% - $size--title - 0.5rem);
+
+    & .project__card {
+        height: 80%;
+        width: 140px;
+        padding: 1rem;
+        border-radius: calc($size--border-radius * 2);
+        background-color: $clr--light-blue;
+
+        font-weight: 800;
+        text-transform: uppercase;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+    }
+
+    & svg {
+        width: 3rem;
+        color: black;
     }
 }

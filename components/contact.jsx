@@ -1,5 +1,6 @@
 import Icon from '@mdi/react'
 import { mdiGithub, mdiEmailOutline, mdiLinkedin, mdiCellphone, mdiMapMarkerOutline, mdiWhatsapp } from '@mdi/js'
+import './components.scss'
 
 export default function Contact () {
   return (
