@@ -246,16 +246,6 @@
     animation: slideInBottom 1s ease-out;
 }
 
-@keyframes scaleOnHover {
-    to{
-        transform: scale(1.1);
-    }
-}
-
-.scaleOnHover:hover {
-    animation: scaleOnHover 500ms ease-in infinite;
-}
-
 /* Utility Classes */
 
 .animate {
@@ -302,4 +292,12 @@
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
+}
+
+.scaleOnHover {
+    transition: transform 300ms;
+}
+
+.scaleOnHover:hover {
+    transform: scale(1.2);
 }
