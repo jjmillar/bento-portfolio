@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
 /* Variables */
 $animate-speed--slow: 1.5s;
 $animate-speed--mid: 1s;
@@ -12,14 +14,16 @@ $clr--light-yellow: #FDFCDC;
 $clr--yellow: #f9c74f;
 $clr--red: #f94144;
 
+$font--primary: "Noto Sans", sans-serif;
 
 $size--border-radius: 1rem;
 $size--gap: 10px;
-$size--title: 1.5rem;
+$size--title: 1.6rem;
+$size--subtitle: 1.3rem;
 
 /* Global Inheritance */
 :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: $font--primary;
   line-height: 1.5;
   font-weight: 400;
 

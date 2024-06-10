@@ -20,18 +20,30 @@
 /* STUDIES */
 
 .studies__wrapper{
-    background-color: blue;
+    height: calc(100% - $size--title - 0.5rem); 
 
     display: flex;
+    align-items: center;
     justify-content: space-evenly;
-    gap: 5px;
+    gap: 1rem;
 
 
     .studies__card {
-        height: 150px;
-        width: 100px;
-        border-radius: $size--border-radius;
-        background-color: red;
+        height: 80%;
+        width: 120px;
+        padding: 1rem;
+        border: none;
+        border-radius: calc($size--border-radius * 2);
+        background-color: #DDFC74;
+
+        font-family: $font--primary;
+        font-weight: 800;
+        text-transform: uppercase;
+
+        display: flex;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
     }
 }
 
@@ -45,7 +57,10 @@
     align-items: center;
     
 
-    svg {
-        max-width: 3.5rem;
+    a {
+       svg {
+            min-width: 3.5rem;
+            color: black;
+       }
     }
 }
