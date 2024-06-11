@@ -72,6 +72,7 @@
     overflow: scroll;
 
     & .experience__title {
+        font-size: calc($size--title * 0.7);
         font-weight: 700;
         margin: 2rem 0 0 0;
     }
@@ -85,7 +86,7 @@
         margin: 0;
 
         & li::marker {
-            color: $clr--red;
+            color: $clr--light-blue;
         }
     }
 }
