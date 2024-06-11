@@ -96,9 +96,14 @@
 .projects__wrapper {
     height: calc(100% - $size--title - 0.5rem);
 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+
     & .project__card {
         height: 80%;
-        width: 140px;
+        min-width: 140px;
         padding: 1rem;
         border-radius: calc($size--border-radius * 2);
         background-color: $clr--light-blue;
