@@ -21,9 +21,9 @@ function App () {
         <label className='title'>Contacto</label>
         <Contact />
       </section>
-      <section id='bento__languaje' className={`bento__languaje animate ${animateClass('slideInLeft', 'slideInBottom', 'slideInBottom')} animate--mid`}>
+      <section id='bento__language' className={`bento__language animate ${animateClass('slideInLeft', 'slideInBottom', 'slideInBottom')} animate--mid`}>
         <label className='title'>Idiomas</label>
-        <summary className='languajes'>
+        <summary className='languages'>
           <div className='subtitle'>Español: Nativo</div>
           <div className='subtitle'>Ingles: Avanzado</div>
         </summary>
