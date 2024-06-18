@@ -10,7 +10,7 @@ function App () {
   return (
     <main className='bento'>
       <section id='bento__photo' className={`bento__photo animate ${animateClass('slideInLeft', 'slideInTop', 'slideInTop')} animate--fast`}>
-        <img className='photo__image' src='/profile1.jpg' alt='Julian profile photo' />
+        <img className='photo__image' src='/profile.jpg' alt='Julian profile photo' />
       </section>
       <section className={`bento__description animate ${animateClass('slideInTop', 'slideInTop', 'slideInRight')} animate--slow text--wrap`}>
         <label className='title'>Julián Jesús Millar Vollaire</label>
