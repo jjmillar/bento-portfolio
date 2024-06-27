@@ -258,6 +258,12 @@
     transform: scale(1.2);
 }
 
+@keyframes scrollLeft {
+    to {
+        left: -200px;
+    }
+}
+
 /* Utility Classes */
 
 .animate {

@@ -95,33 +95,59 @@
 /* PROJECTS */
 
 .projects__wrapper {
+    --animation-delay: 30s;
+
     height: calc(100% - $size--title - 0.5rem);
 
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    gap: 1rem;
-    overflow: scroll;
+    position: relative;
+    overflow: hidden;
+    mask-image: linear-gradient(
+        to right,
+        rgba(0,0,0,0),
+        rgba(0,0,0,1) 20%,
+        rgba(0,0,0,1) 80%,
+        rgba(0,0,0,0)
+        );
 
     & .project__card {
-        height: 70%;
-        min-width: 140px;
-        padding: 1rem;
+        height: 90%;
+        width: 200px;
         border-radius: calc($size--border-radius * 2);
         background-color: $clr--light-blue;
 
         font-weight: 800;
         text-transform: uppercase;
 
+        position: absolute;
+        left: calc(200px * 4);
+        
         display: flex;
         flex-direction: column;
         align-items: center;
         text-align: center;
         justify-content: center;
+
+        animation: scrollLeft var(--animation-delay) linear infinite;
     }
 
     & svg {
         width: 3rem;
         color: black;
+    }
+
+    & .project1 {
+        animation-delay: calc((30s / 4) * (4 - 1) * -1);
+    }
+
+    & .project2 {
+        animation-delay: calc((30s / 4) * (4 - 2) * -1);
+    }
+
+    & .project3 {
+        animation-delay: calc((30s / 4) * (4 - 3) * -1);
+    }
+
+    & .project4 {
+        animation-delay: calc((30s / 4) * (4 - 4) * -1);
     }
 }
