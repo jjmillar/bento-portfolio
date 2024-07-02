@@ -45,6 +45,11 @@
         align-items: center;
         text-align: center;
         justify-content: center;
+
+        
+        position: absolute;
+        left: calc(180px * 4);
+        animation: scrollLeft200 $animation-delay linear infinite;
     }
 }
 
@@ -103,7 +108,6 @@
 /* PROJECTS */
 
 .projects__wrapper {
-    --animation-delay: 30s;
 
     height: calc(100% - $size--title - 0.5rem);
 
@@ -112,13 +116,6 @@
 
     position: relative;
     overflow: scroll;
-    mask-image: linear-gradient(
-        to right,
-        rgba(0,0,0,0),
-        rgba(0,0,0,1) 20%,
-        rgba(0,0,0,1) 80%,
-        rgba(0,0,0,0)
-        );
 
     & .project__card {
         height: 85%;
@@ -138,7 +135,7 @@
         text-align: center;
         justify-content: center;
 
-        animation: scrollLeft var(--animation-delay) linear infinite;
+        animation: scrollLeft200 $animation-delay linear infinite;
     }
 
     & svg {
@@ -147,18 +144,18 @@
     }
 
     & .project1 {
-        animation-delay: calc((var(--animation-delay) / 4) * (4 - 1) * -1);
+        animation-delay: calc(($animation-delay / 4) * (4 - 1) * -1);
     }
 
     & .project2 {
-        animation-delay: calc((var(--animation-delay) / 4) * (4 - 2) * -1);
+        animation-delay: calc(($animation-delay / 4) * (4 - 2) * -1);
     }
 
     & .project3 {
-        animation-delay: calc((var(--animation-delay) / 4) * (4 - 3) * -1);
+        animation-delay: calc(($animation-delay / 4) * (4 - 3) * -1);
     }
 
     & .project4 {
-        animation-delay: calc((var(--animation-delay) / 4) * (4 - 4) * -1);
+        animation-delay: calc(($animation-delay / 4) * (4 - 4) * -1);
     }
 }

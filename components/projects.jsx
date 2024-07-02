@@ -4,7 +4,7 @@ import { mdiGithub, mdiWeb } from '@mdi/js'
 
 export default function Projects () {
   return (
-    <div className='projects__wrapper'>
+    <div className='projects__wrapper mask--image'>
       <div className='project__card project1 cardOnHover'>
         <p className='project__title'>webpage para elemental dojo</p>
         <div>

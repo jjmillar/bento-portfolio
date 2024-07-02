@@ -2,7 +2,7 @@ import './components.scss'
 
 export default function Studies () {
   return (
-    <div className='studies__wrapper'>
+    <div className='studies__wrapper mask--image'>
       <button className='studies__card cardOnHover'>FullStack MERN M.I.T. xPRO</button>
       <button className='studies__card cardOnHover'>FullStack MERN Microsoft Launch-X Latam</button>
       <button className='studies__card cardOnHover'>Udemy</button>
