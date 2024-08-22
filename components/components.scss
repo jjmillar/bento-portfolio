@@ -29,10 +29,9 @@
     overflow: scroll;
 
 
-    .studies__card {
-        height: 80%;
+    & .studies__card {
+        height: 70%;
         width: 120px;
-        padding: 1rem;
         border: none;
         border-radius: calc($size--border-radius * 2);
         background-color: $clr--lime;
@@ -49,7 +48,27 @@
         
         position: absolute;
         left: calc(180px * 4);
-        animation: scrollLeft200 $animation-delay linear infinite;
+        animation: scrollLeft120 $animation-delay linear infinite;
+    }
+
+    & .studies1 {
+        animation-delay: calc(($animation-delay / 5) * (5 - 1) * -1);
+    }
+
+    & .studies2 {
+        animation-delay: calc(($animation-delay / 5) * (5 - 2) * -1);
+    }
+
+    & .studies3 {
+        animation-delay: calc(($animation-delay / 5) * (5 - 3) * -1);
+    }
+
+    & .studies4 {
+        animation-delay: calc(($animation-delay / 5) * (5 - 4) * -1);
+    }
+
+    & .studies5 {
+        animation-delay: calc(($animation-delay / 5) * (5 - 5) * -1);
     }
 }
 
