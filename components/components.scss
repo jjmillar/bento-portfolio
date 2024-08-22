@@ -24,13 +24,12 @@
 
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
-    gap: 1rem;
+    position: relative;
     overflow: scroll;
 
 
     & .studies__card {
-        height: 70%;
+        height: 85%;
         width: 120px;
         border: none;
         border-radius: calc($size--border-radius * 2);
